@@ -1,0 +1,51 @@
+#navSection {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 6 kolumner */
+  grid-template-rows: auto;
+  border: 0.3rem solid green;
+  gap: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+#nav {
+  display: flex;
+  gap: 1rem;
+  height: auto;
+  grid-column: 1 / span 1; /* Börjar i kolumn 2 och spänner över 3 kolumner */
+
+  background-color: lightblue;
+  border: 0.3rem solid red;
+  justify-self: center;
+  align-self: center;
+  h2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+}
+
+#sidebarSection {
+  height: auto;
+  border: 0.3rem solid saddlebrown;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+
+  #sidebar {
+    height: 100vh;
+    display: grid;
+
+    border: 0.3rem solid purple;
+    padding: 1rem;
+    grid-area: 1/1/5/2;
+    /*  rs/re/cs/ce */
+  }
+  p {
+    font-size: 1rem;
+    color: rgb(55, 128, 14);
+  }
+}
