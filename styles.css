@@ -28,24 +28,51 @@
   }
 }
 
-#sidebarSection {
+#container {
   height: auto;
   border: 0.3rem solid saddlebrown;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 9vh);
   grid-template-columns: repeat(4, 1fr);
 
   #sidebar {
-    height: 100vh;
     display: grid;
 
     border: 0.3rem solid purple;
     padding: 1rem;
-    grid-area: 1/1/5/2;
+    grid-area: 1/1/9/2;
     /*  rs/re/cs/ce */
   }
+
   p {
-    font-size: 1rem;
+    font-size: clamp(0.6rem, 2.5vw, 1rem);
     color: rgb(55, 128, 14);
+  }
+
+  #middle {
+    display: flex;
+    border: 0.3rem solid rgb(52, 17, 179);
+
+    grid-area: 1/2/5/3;
+    /*  rs/re/cs/ce */
+    justify-content: center;
+    h3 {
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: green;
+    }
+  }
+
+  #right {
+    display: flex;
+    border: 0.3rem solid rgb(255, 0, 234);
+
+    grid-area: 1/4/8/5;
+    /*  rs/re/cs/ce */
+    justify-content: center;
+
+    h3 {
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: green;
+    }
   }
 }
