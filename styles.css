@@ -71,15 +71,27 @@
     justify-content: center;
 
     #rsvp-form {
-      margin-top: 16px;
-      margin-bottom: 16px;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      font-weight: bold;
-      font-size: clamp(1rem, 2.5vw, 1.4rem);
-      color: green;
+      #formHeader {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-size: clamp(auto, 2.5vw, 1.4rem);
+        color: green;
+      }
+
+      #userInput {
+        display: block;
+        width: clamp(0.1px, 20vw, 8rem);
+      }
+
+      #messageArea {
+        display: block;
+        width: clamp(0.1px, 20vw, 8rem);
+      }
     }
   }
   margin-bottom: 0.3rem;
