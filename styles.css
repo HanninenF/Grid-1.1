@@ -1,5 +1,5 @@
 #navSection {
-  margin-top: 10vh;
+  margin-top: 7vh;
   display: grid;
   grid-template-columns: repeat(1, 1fr); /* 6 kolumner */
   grid-template-rows: auto;
@@ -28,7 +28,7 @@
   }
 }
 
-#container {
+#topContainer {
   height: auto;
   border: 0.3rem solid saddlebrown;
   display: grid;
@@ -70,9 +70,32 @@
     /*  rs/re/cs/ce */
     justify-content: center;
 
-    h3 {
+    #rsvp-form {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
       font-size: clamp(1rem, 2.5vw, 1.4rem);
       color: green;
     }
+  }
+  margin-bottom: 0.3rem;
+}
+
+#bottomContainer {
+  border: 0.3rem solid rgb(93, 241, 6);
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(1, 1fr);
+  h2 {
+    border: 0.3rem solid rgb(255, 0, 0);
+    display: flex;
+    font-size: clamp(1.2rem, 2.5vh, 1.7rem);
+    grid-area: 1/1/2/2;
+    justify-content: center;
   }
 }
